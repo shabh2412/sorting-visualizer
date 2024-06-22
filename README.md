@@ -45,13 +45,13 @@ Follow these instructions to set up and run the project locally.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/sortwave.git
+   git clone https://github.com/shabh2412/sorting-visualizer.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd sortwave
+   cd sorting-visualizer
    ```
 
 3. Install the dependencies:
@@ -64,10 +64,10 @@ Follow these instructions to set up and run the project locally.
 1. Start the development server:
 
    ```sh
-   npm start
+   npm run dev
    ```
 
-2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+2. Open your browser and navigate to `http://localhost:5173` to see the application in action.
 
 ## Usage
 
@@ -79,25 +79,32 @@ Follow these instructions to set up and run the project locally.
 ## Project Structure
 
 ```
-sortwave/
+sorting-visualizer/
 ├── public/
 ├── src/
 │   ├── components/
 │   │   ├── ArrayLength.jsx
-│   │   ├── SortSpeed.jsx
-│   │   ├── SortButton.jsx
 │   │   ├── ArrayVisualizer.jsx
+│   │   ├── HeroSection.jsx
 │   │   └── Navbar.jsx
+│   │   ├── SortButton.jsx
+│   │   ├── SortSpeed.jsx
+│   │   ├── ThemeController.jsx
 │   ├── context/
 │   │   └── ThemeContext.js
-│   ├── App.js
-│   ├── index.js
-│   └── styles/
-│       └── tailwind.css
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── .eslintrc.cjs
 ├── .gitignore
+├── LICENSE
+├── package-lock.json
 ├── package.json
+└── postcss.config.js
 ├── README.md
 └── tailwind.config.js
+└── vite.config.js
 ```
 
 ## Contributing
