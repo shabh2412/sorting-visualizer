@@ -30,7 +30,7 @@ SortWave is a simple and interactive sorting visualizer built with React and dai
 
 ## Live Demo
 
-Check out the live demo of the project at [SortWave](https://sorting-visualizer.rishabhpanesar.com/).
+Check out the live demo of the project at [SortWave](https://sortwave.rishabhpanesar.com/).
 
 ## Getting Started
 
