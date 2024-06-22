@@ -18,6 +18,10 @@ SortWave is a simple and interactive sorting visualizer built with React and dai
 - Merge Sort
 - Counting Sort
 
+## Algo to be added
+
+- Radix Sort
+
 ## Technologies Used
 
 - React: A JavaScript library for building user interfaces.
