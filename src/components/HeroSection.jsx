@@ -15,7 +15,7 @@ export const HeroSection = () => {
               <li onClick={() => window.location.hash = "array-visualiser"} className="py-2 px-4 rounded bg-gray-100 hover:bg-gray-200 transition-colors duration-200 cursor-pointer">Insertion Sort</li>
               <li onClick={() => window.location.hash = "array-visualiser"} className="py-2 px-4 rounded bg-gray-100 hover:bg-gray-200 transition-colors duration-200 cursor-pointer">Selection Sort</li>
               <li onClick={() => window.location.hash = "array-visualiser"} className="py-2 px-4 rounded bg-gray-100 hover:bg-gray-200 transition-colors duration-200 cursor-pointer">Quick Sort</li>
-              <li onClick={() => window.location.hash = "array-visualiser"} className="py-2 px-4 rounded bg-gray-100 hover:bg-gray-200 transition-colors duration-200 cursor-pointer">Merge Sort</li>
+              <li onClick={() => window.location.hash = "array-visualiser"} className="py-2 px-4 rounded bg-gray-100 hover:bg-gray-200 transition-colors duration-200 cursor-pointer">& much more...</li>
             </ul>
           </div>
         </div>
