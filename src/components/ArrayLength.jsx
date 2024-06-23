@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 export const ArrayLength = ({ min, max, n, set_n, disabled, reset_array, reload_array, is_not_same }) => {
   return (
-    <>
+    <div className='max-w-[80dvw] mx-auto'>
       {/* title for this section */}
-      <div className="text-center text-3xl font-bold mt-20">Array Length</div>
+      <div className="text-center text-3xl font-bold mt-20 w-full">Array Length</div>
       <p className="text-center mt-4">Choose the length of the array between <span className="text-primary"> {min}</span> and <span className="text-primary"> {max}</span></p>
       <p className="text-center text-xl mt-4">N - {n}</p>
       <div className="container mx-auto my-4 w-full">
@@ -16,7 +16,7 @@ export const ArrayLength = ({ min, max, n, set_n, disabled, reset_array, reload_
         </label>
         {/* reset button */}
       </div>
-      <div className="mx-auto flex justify-center items-center my-4 gap-4">
+      <div className="mx-auto flex justify-center items-center my-4 gap-4 flex-wrap">
         <button
           className="btn btn-secondary btn-sm"
           onClick={() => reset_array()}
@@ -27,7 +27,7 @@ export const ArrayLength = ({ min, max, n, set_n, disabled, reset_array, reload_
         {
           is_not_same &&
           <button
-            className="btn btn-secondary btn-sm ml-4"
+            className="btn btn-secondary btn-sm"
             onClick={() => reload_array()}
             disabled={disabled}
           >
@@ -36,7 +36,7 @@ export const ArrayLength = ({ min, max, n, set_n, disabled, reset_array, reload_
         }
       </div>
 
-    </>
+    </div>
   );
 };
 
