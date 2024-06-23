@@ -382,7 +382,7 @@ export const ArrayVisualiser = () => {
       <SortSpeed speed={speed} set_speed={set_speed} disabled={sorting} stopwatch={stopwatch} />
 
       {/* sorting options */}
-      <div className="w-[80dvw] mx-auto flex justify-center mt-4 gap-4">
+      <div className="w-[80dvw] mx-auto grid grid-cols-2 md:flex justify-center mt-4 gap-4 flex-wrap">
         {/* tooltip - tell the user which sorting will be performed, if is_sorted is true then tell the user that the array is sorted */}
         <SortButton title="Bubble Sort" is_sorted={is_sorted} sorting={sorting} array={array} sorting_function={debounced_bubble_sort} />
         <SortButton title="Selection Sort" is_sorted={is_sorted} sorting={sorting} array={array} sorting_function={debounced_selection_sort} />
