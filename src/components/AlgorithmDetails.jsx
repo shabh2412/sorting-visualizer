@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import VideoPlayer from "./VideoPlayer";
 
 const AlgorithmDetails = ({ algorithm }) => {
   if (!algorithm) return null;
@@ -8,18 +9,7 @@ const AlgorithmDetails = ({ algorithm }) => {
       <h2 className="text-2xl font-bold mb-4">{algorithm.name}</h2>
       {/* if youtube_tutorial_id is not null, then show video */}
       {algorithm.youtube_tutorial_ids && (
-        // iframe should be a 16:9 aspect ratio and responsive
-        <div className="mb-4">
-          <iframe
-            className="w-full md:w-[30dvw] lg:w-[44dvw] xl:w-[50dvw] rounded-lg shadow-lg my-2 mx-auto"
-            width="560"
-            height="315"
-            src={`https://www.youtube.com/embed/${algorithm.youtube_tutorial_ids[0]}?controls=1&playlist=${algorithm?.youtube_tutorial_ids?.join(",")}&color=red`}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <VideoPlayer youtube_tutorial_ids={algorithm.youtube_tutorial_ids} />
       )}
       <div className="flex justify-between items-center gap-8 flex-wrap">
         <p className="mb-4 max-w-full">{algorithm.description}</p>
