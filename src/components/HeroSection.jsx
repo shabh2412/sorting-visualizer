@@ -1,7 +1,7 @@
 export const HeroSection = () => {
   return (
     <div className="hero min-h-[80vh] flex flex-col items-center justify-center bg-gradient-to-tl from-primary to-secondary text-white py-10 rounded">
-      <div className="hero-content text-center w-full max-w-6xl px-6">
+      <div className="hero-content text-center w-full max-w-6xl p-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-left space-y-6">
             <h1 className="text-5xl font-extrabold leading-tight drop-shadow-lg">SortWave</h1>

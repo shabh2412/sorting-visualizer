@@ -3,7 +3,7 @@ const SortButton = ({ title, is_sorted, sorting, array, sorting_function }) => {
   return (
     <div className="tooltip tooltip-bottom" data-tip={is_sorted ? "Array is sorted" : sorting ? "Sorting..." : title}>
       <button
-        className="btn btn-primary btn-md"
+        className="btn btn-primary btn-md btn-block"
         onClick={() => sorting_function(array)}
         disabled={sorting || is_sorted}
       >

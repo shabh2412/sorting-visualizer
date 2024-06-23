@@ -6,8 +6,8 @@ export const ArrayLength = ({ min, max, n, set_n, disabled, reset_array, reload_
       <div className="text-center text-3xl font-bold mt-20">Array Length</div>
       <p className="text-center mt-4">Choose the length of the array between <span className="text-primary"> {min}</span> and <span className="text-primary"> {max}</span></p>
       <p className="text-center text-xl mt-4">N - {n}</p>
-      <div className="container mx-auto my-4 flex">
-        <label className="label flex gap-3 flex-1">
+      <div className="container mx-auto my-4 w-full">
+        <label className="label flex gap-1 md:gap-4 flex-1">
           {/* 1 */}
           <span className="label-text-alt">{min}</span>
           <input disabled={disabled} type="range" min={min} max={max} step={1} value={n} onChange={(e) => set_n(+e.target.value)} className={`range ${disabled ? "[--range-shdw:gray]" : ""}`} />

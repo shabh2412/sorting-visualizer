@@ -10,7 +10,7 @@ export default function App() {
     <div data-theme={theme} className="font-sans">
       <Navbar />
 
-      <div className="min-h-[92dvh] bg-base-200 p-6">
+      <div className="min-h-[92dvh] bg-base-200 p-0 w-full">
         {/* Hero Section to introduce the app */}
         <HeroSection />
         <ArrayVisualiser />
